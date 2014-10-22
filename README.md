@@ -1,4 +1,4 @@
-docker-minia
-============
+minia
+=====
 
 Docker image for the minia assembler
