@@ -2,7 +2,7 @@ FROM debian:wheezy
 MAINTAINER Michael Barton, mail@michaelbarton.me.uk
 
 ENV PACKAGES wget
-ENV TAR http://gatb-tools.gforge.inria.fr/versions/bin/minia-0.1.1-Linux.tar.gz
+ENV TAR http://gatb-tools.gforge.inria.fr/versions/bin/minia-1.0.4-Linux.tar.gz
 ENV DIR /tmp/minia
 
 RUN apt-get update -y && \
