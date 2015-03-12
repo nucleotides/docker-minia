@@ -1,5 +1,5 @@
 FROM debian:wheezy
-MAINTAINER Michael Barton, mail@michaelbarton.me.uk
+MAINTAINER Rayan Chikhi, rayan.chikhi@univ-lille1.fr
 
 ENV PACKAGES wget
 ENV TAR http://gatb-tools.gforge.inria.fr/versions/bin/minia-2.0.2-Linux.tar.gz
