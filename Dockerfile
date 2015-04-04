@@ -1,8 +1,8 @@
 FROM debian:wheezy
-MAINTAINER Michael Barton, mail@michaelbarton.me.uk
+MAINTAINER Rayan Chikhi, rayan.chikhi@univ-lille1.fr
 
-ENV PACKAGES wget make g++ bc zlib1g-dev
-ENV TAR http://minia.genouest.org/files/minia-1.6906.tar.gz
+ENV PACKAGES wget
+ENV TAR http://gatb-tools.gforge.inria.fr/versions/bin/minia-2.0.2-Linux.tar.gz
 ENV DIR /tmp/minia
 
 RUN apt-get update -y && \
@@ -12,8 +12,7 @@ RUN apt-get update -y && \
 RUN mkdir ${DIR}
 RUN cd ${DIR} &&\
     wget ${TAR} -O - | tar xzf - --directory . --strip-components=1 &&\
-    make k=128 && \
-    mv minia /usr/local/bin
+    mv bin/minia /usr/local/bin
 
 ADD Procfile /
 ADD run /usr/local/bin/
